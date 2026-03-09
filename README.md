@@ -6,6 +6,10 @@ DroidX provides quick access to essential Android Debug Bridge (ADB) operations 
 
 ---
 
+<img width="2871" height="1687" alt="image" src="https://github.com/user-attachments/assets/d7ab78b5-70f7-42b5-881b-cf4940556a0b" />
+
+---
+
 ## ✨ Features
 
 ### 📱 Device Management
