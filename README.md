@@ -98,7 +98,7 @@ On your Android device:
 
 Developed by **Sumit Ghosh**
 
-📧 Email: whitehxxxx@gmail.com
+📧 Email: whitehatsumit@proton.me
 
 ---
 
