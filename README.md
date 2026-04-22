@@ -1,116 +1,104 @@
-# DroidX - Android Device Manager
+# 🚀 DroidX
+### A Complete Android Manager (PowerShell GUI)
 
-🚀 **DroidX** is a lightweight Android device management tool designed to simplify Android maintenance, debugging, and bloatware management through a user-friendly interface.
-
-DroidX provides quick access to essential Android Debug Bridge (ADB) operations without requiring complex command line usage.
-
----
-
-<img width="2871" height="1687" alt="image" src="https://github.com/user-attachments/assets/d7ab78b5-70f7-42b5-881b-cf4940556a0b" />
+DroidX is a lightweight, GUI-based Android management tool built using PowerShell and Windows Forms. It provides essential ADB functionalities in a clean and user-friendly interface without requiring manual command-line interaction.
 
 ---
+
+
+<img width="2879" height="1694" alt="image" src="https://github.com/user-attachments/assets/f91e56a0-aa83-485c-a8c1-625bf0ae1c06" />
+
 
 ## ✨ Features
 
-### 📱 Device Management
-- Detect connected Android devices
-- Show device information
-- Check device connection status
-- Restart ADB server
-- Reconnect device automatically
-
-### 🧹 Bloatware Management
-- List installed applications
-- Uninstall system apps (bloatware)
-- Disable preinstalled apps
-- Re-enable disabled apps
-
-### 📂 File & Package Tools
-- Install APK files
-- Uninstall applications
-- Extract installed APK
-- Pull files from device
-- Push files to device
-
-### ⚙️ Device Controls
-- Reboot device
-- Reboot to Recovery
-- Reboot to Bootloader
-- Take screenshots
-- Screen recording
-
-### 🧪 Developer Tools
-- ADB shell access
-- Logcat viewer
-- Package manager commands
-- Debugging utilities
+### 🔌 Connect (ADB Installer)
+- Automatically downloads **official Android Platform Tools**
+- Installs safely from Google source
+- Stores ADB path for reuse
+- Detects existing installation
 
 ---
 
-## 🖥️ Interface
-
-DroidX provides a simple **GUI interface** so users can manage Android devices without memorizing ADB commands.
-
-Menu structure includes:
-
-- **Device**
-- **ADB Tools**
-- **Bloatware Manager**
-- **APK Manager**
-- **Utilities**
-- **About**
+### 🔄 Refresh (Device Detection)
+- Runs `adb devices`
+- Displays connected devices
+- Shows status:
+  - `device`
+  - `unauthorized`
+  - `offline`
 
 ---
 
-## 📦 Requirements
+### 📱 Devices Manager
+- Supports **multiple devices**
+- Lists all connected devices
+- Allows device selection
+- Prepares for multi-device control
+
+---
+
+### 📦 Bloatware Manager
+- Lists installed apps:
+  - All apps
+  - User apps
+  - System apps
+- Features:
+  - 🔍 Search filter
+  - 🚫 Disable apps
+  - ❌ Uninstall apps (user-level)
+
+---
+
+### 🔧 Recovery Tools
+- Reboot options:
+  - Recovery Mode
+  - System
+  - Download Mode (Samsung supported)
+- Quick-access popup UI
+
+---
+
+### 📸 Screenshot Tool
+- Captures device screen using ADB
+- Saves to PC automatically
+- Displays preview instantly
+- Cleans temporary device files
+
+---
+
+### 📘 User Guide
+- Step-by-step guide to enable USB Debugging
+- Beginner-friendly instructions
+- Built-in help system
+
+---
+
+### ℹ️ About Section
+- App information
+- Developer details
+- Contact information
+
+---
+
+## 🖥️ System Requirements
 
 - Windows 10 / 11
-- Android Debug Bridge (ADB)
-- USB Debugging enabled on Android device
+- PowerShell 5.1+
+- .NET Framework (pre-installed on Windows)
+- Internet connection (first run for ADB download)
 
 ---
 
-## 🔧 Installation
+## 📱 Device Requirements
 
-1. Download the latest release.
-2. Extract the files.
-3. Connect your Android device with **USB Debugging enabled**.
-4. Run:
-
-
+- Android device
+- USB cable
+- USB Debugging enabled
 
 ---
 
-## 🔌 Enable USB Debugging
+## ⚙️ Setup & Usage
 
-On your Android device:
-
-
----
-
-## 📜 Version
-
-**DroidX Android Device Manager v1.0**
-
----
-
-## 👨‍💻 Developer
-
-Developed by **Sumit Ghosh**
-
-📧 Email: whitehatsumit@proton.me
-
----
-
-## ⚠️ Disclaimer
-
-DroidX allows modification of system packages.  
-Removing critical apps may cause device instability.
-
-Use responsibly.
-
----
-
-## ⭐ Support
-
-If you find DroidX useful, consider giving the project a **star ⭐ on GitHub**.
+### 1. Run the Script
+```powershell
+powershell -ExecutionPolicy Bypass -File DroidX.ps1
